@@ -1,0 +1,23 @@
+/* src/components/CanvasStage.css */
+
+.canvas-wrapper {
+  width: 600px;
+  height: 400px;
+  margin: auto; /* centers the canvas-wrapper horizontally within its parent */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow: hidden; /* ensures no accidental overflow */
+}
+
+.canvas-stage {
+  /* Ensures the canvas fills its wrapper exactly */
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.canvas-stage:active {
+  cursor: grabbing;
+}
